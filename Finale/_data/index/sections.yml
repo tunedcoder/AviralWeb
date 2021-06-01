@@ -1,0 +1,21 @@
+- name : hero
+  title : Hero
+- name : about
+  title : About Me
+  description : Get to know a little of our history and the road we traveled that took us to the level we are today.
+- name : skills
+  title : Main Skills
+- name : experience
+  title : My Experience
+- name : projects
+  title : My Projects
+- name : blogindex
+  title : Blog Area
+- name : wallfame
+  title : Wall Of Fame
+- name : achievements
+  title : My Achievements and Certifications
+- name : education
+  title : Education
+- name : contact
+  title : Let's Talk
