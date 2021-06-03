@@ -1,0 +1,16 @@
+- name: Web App penetration testing
+  per: 80
+- name: internal and external network penetration testing
+  per: 70
+- name: Security Tools
+  per: 80
+- name: Programming Languages
+  per: 70
+- name: Linux Bash
+  per: 85
+- name: Wireless Security Testing 
+  per: 75
+- name: Incident Response And Forensics
+  per: 80
+- name: Hardwork
+  per: 100

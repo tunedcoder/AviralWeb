@@ -321,11 +321,13 @@ h4 {
     word-wrap: break-word;
 }
 
-.odd h4,
-.body-mode-dark h4 !important{
-    color: var(--secondary-t-color);
+.odd h4{
+	color: var(--secondary-t-color);
 }
 
+.odd .offers:not(.on-hover):hover h4 !important{
+    color: var(--secondary-t-color);
+}
 
 h5 {
     margin: 1.5rem 0;
@@ -1188,7 +1190,7 @@ aside {
 }
 
 .showcase .card-footer {
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .showcase .no-image .card-footer {
@@ -2384,12 +2386,40 @@ header .navbar-expand .navbar-brand img {
     transition-property: opacity, transform;
 }
 
+
+.certi{
+	position: relative;
+    z-index: 1;
+    width: 250%;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--card-bg-color);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    transition-timing-function: cubic-bezier(.25, .25, .75, .75);
+    transition-duration: 0.4s;
+    transition-property: opacity, transform;
+}
+
 .card.no-hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+.certi.no-hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.edu.no-hover {
     background-color: transparent;
     box-shadow: none;
 }
 
 .odd:not(.custom) .card:not(.no-hover):not(:hover) {
+    background-color: var(--dark-grey-color);
+}
+.odd:not(.custom) .cert:not(.no-hover):not(:hover) {
     background-color: var(--dark-grey-color);
 }
 
@@ -2480,10 +2510,18 @@ header .navbar-expand .navbar-brand img {
 }
 
 .card:not(.no-hover):hover h3,
-.card:not(.no-hover):hover h4,
 .card:not(.no-hover):hover p {
     color: #f5f5f5;
 }
+
+.card:not(.no-hover) h4 {
+	color:var(--primary-t-color);
+}
+
+.card:hover h4 {
+	color:var(--secondary-t-color);
+}
+
 
 .card:not(.no-hover):hover span,
 .card.stycky:not(.no-hover) span {

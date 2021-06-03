@@ -1,9 +1,38 @@
-<section id="{{ sect.name }}" class="section-6 odd counter skills featured">
-	<div class="container">
-		<div class="row text-center intro">
-			<div class="col-12">
-				<h2 class="super effect-static-text">{{ sect.title }}</h2>
-				<p class="text-max-800">We see all types of projects as if they were ours. This brings us closer to our clients' projects bringing much more confidence and commitment.</p>
+<section id="{{ sect.name }}" class="section-6 odd offers custom ">
+	<div class="overflow-holder">
+		<div class="container">
+			<div class="row text-center intro">
+				<div class="col-12 align-self-center text-center">
+					<h2 class="super effect-static-text">
+					{{ sect.title }}
+					</h2>
+					<p class="text-max-800">Leverage has a lot of ready-made content that you can <strong>easily publish</strong>.<br>If you are looking for something that will shorten your working time, you have just found it.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center text-center items">
+				<div class="col-12 col-md-6 col-lg-4 item">
+					<div class="card featured">
+						<i class="icon icon-speedometer"></i>
+						<h4>Professional UX & UI</h4>
+						<p>Professional User Experience and User Interface review.</p>
+					</div>
+				</div>
+				{% for fame in site.data.index.wallfame %}
+					<div class="col-12 col-md-6 col-lg-4 item">
+						<div class="card">
+							<i class="icon icon-check"></i>
+							<h4>{{ fame.name }}</h4>
+							<p>{{ fame.des }}</p>
+						</div>
+					</div>
+				{% endfor %}
+				<div class="col-12 col-md-6 col-lg-4 item">
+					<div class="card featured">
+						<i class="icon icon-fire"></i>
+						<h4>Unique Design</h4>
+						<p>Enjoy a unique design and impress visitors with something beautiful.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

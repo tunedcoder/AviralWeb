@@ -1,0 +1,8 @@
+- name: All
+  value: all
+- name: Cat 1
+  value: cat1
+- name: Cat 2
+  value: cat2
+- name: Cat 3
+  value: cat3
