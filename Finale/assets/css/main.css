@@ -213,7 +213,7 @@ p:last-child {
 }
 
 h1,
-.slide-content .title {
+.slide-content .title{
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-size: var(--h1-size);
@@ -317,6 +317,18 @@ h4 {
     line-height: 1.2;
     font-family: var(--h2-font);
     color: var(--primary-t-color);
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.slide-content .subtitle {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+    font-size: 3rem;
+    font-weight: var(--h1-weight);
+    line-height: 1.2;
+    font-family: var(--h1-font);
+    color: var(--primary-color);
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
